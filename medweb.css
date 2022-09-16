@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.4;
+    height: 100vh;
+    /* background-color: black; */
+}
+
+.svg-container {
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+.page-wrapper {
+    padding: 10px;
+}
+
+.parent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: space-around;
+    background: #555;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    border-radius: .3em;
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 6px 10px;
+    border: solid 1px #ccc;
+    color: white;
+    padding: 20px;
+    margin: auto;
+}
+
+.card div {
+    font-size: 1.2em;
+}
+
+.card img {
+    width: 90%; 
+	/* flex-grow: 1;
+	flex-shrink: 1; */
+}
+
+.blue {
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+
+}
+
+.blue:hover {
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+
+.filter-white {
+    filter: invert(99%) sepia(5%) saturate(3090%) hue-rotate(254deg) brightness(119%) contrast(100%);
+}
+
+.filter-blue {
+    filter: invert(12%) sepia(63%) saturate(6234%) hue-rotate(246deg) brightness(87%) contrast(156%);
+}
+

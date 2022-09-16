@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>My Cool Website</title>
-   </head>
-   <body>
-      <h1>Welcome to my website! ⭐️</h1>
-      <p>How was your day? 🎉</p>
-   </body>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Composer app</title>
+  <link rel="stylesheet" href="medweb.css">
+ 
+
+</head>
+<body>
+    <div class = "parent white">
+        <div class="card blue" id = "dvt">
+            <img src="./icons/tb.svg" alt="Back pain" class="filter-white"/>
+            <div>DVT Management</div>
+        </div>
+        <div class="card blue" id="enoxa">
+            <img src="./icons/blood_drop.svg" alt="Transfusion" class="filter-white"/>
+            <div>Enoxaparin</div>
+        </div>
+        <div class="card blue"  id="thrombo">
+            <img src="./icons/heart.svg" alt="Heart" class="filter-white"/>
+            <div>TCG058V4</div>
+        </div>
+        <div class="card blue"  id="anticoag">
+            <img src="./icons/blood_cells.svg" alt="Inoculation" class="filter-white"/>
+            <div>Anticoagulation</div>
+        </div>
+
+        <div class="card blue"  id="vte">
+            <img src="./icons/syringe.svg" alt="Inoculation" class="filter-white"/>
+            <div>VTE Thrombo</div>
+        </div>
+    </div>
+<script>
+window.addEventListener("DOMContentLoaded", ev => {
+    document.getElementById("dvt").addEventListener("click", evt => {
+        window.location = "./dvt.html";
+    })
+    document.getElementById("enoxa").addEventListener("click", evt => {
+        window.location = "./enoxaparin.html";
+    })
+    document.getElementById("thrombo").addEventListener("click", evt => {
+        window.location = "./tcg058v4.html";
+    })
+    document.getElementById("anticoag").addEventListener("click", evt => {
+        window.location = "./bridging.html";
+    })
+    document.getElementById("vte").addEventListener("click", evt => {
+        window.location = "./guidelines.html";
+    })
+})
+</script>
+</body>
+
 </html>
