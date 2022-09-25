@@ -62,7 +62,7 @@ function convert(zipfile) {
         const va = currentFile.split('/')
         const fName = va[va.length - 1]
         console.log(fName)
-        const outName = ('./public/' + va[va.length-1].split(/[ .]/).join("_") + ".html").toLowerCase()
+        const outName = ('./docs/' + va[va.length-1].split(/[ .]/).join("_") + ".html").toLowerCase()
         console.log("Will write " + outName)
         try {
             fs.writeFileSync(outName, htmlText);
