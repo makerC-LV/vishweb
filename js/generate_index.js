@@ -86,7 +86,7 @@ let text = template.replace("%DIVS", divs)
 text = text.replace("%LISTENERS%", listeners)
 
 try {
-    fs.writeFileSync("./public/index.html", text);
+    fs.writeFileSync("./docs/index.html", text);
     // file written successfully
 } catch (err) {
     console.error(err);
