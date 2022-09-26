@@ -14,6 +14,8 @@ const fileTemplate =
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
   <title>Composer app</title>
   <link rel="stylesheet" href="medweb.css">
  
@@ -37,6 +39,8 @@ const indexTemplate =
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
   <title>Composer app</title>
   <link rel="stylesheet" href="medweb.css">
  
